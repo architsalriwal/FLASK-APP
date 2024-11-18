@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>Welcome, {{ session['username'] }}!</h1>
+    <nav>
+      <a href="{{ url_for('logout') }}">Logout</a>
+    </nav>
+    <div class="content">
+      <p>This is your dashboard.</p>
+    </div>
+  </body>
+</html>
